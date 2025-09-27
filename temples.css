@@ -1,0 +1,142 @@
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* === HEADER === */
+header {
+    background-color: #007382; 
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* === NAVIGATION === */
+#main-nav {
+    display: flex;
+    align-items: center;
+}
+
+#hamburger-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+    margin-left: 0.5rem;
+    aria-label: "Toggle navigation menu";
+}
+
+#nav-menu {
+    list-style: none;
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+    background: #007382;
+    padding: 1rem;
+    border-radius: 8px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+#nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+}
+
+#nav-menu li {
+    margin: 0.5rem 0;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#nav-menu a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* === MAIN CONTENT === */
+main.container {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+main h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* === GALLERY GRID === */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure figcaption {
+    padding: 0.5rem;
+    background: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #007382; /* Match header color */
+}
+
+/* === FOOTER === */
+footer {
+    background: #007382;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}

@@ -1,0 +1,51 @@
+/* === DESKTOP HEADER & NAV === */
+header {
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+#hamburger-btn {
+    display: none;
+}
+
+#nav-menu {
+    display: flex !important;
+    justify-content: flex-end;
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+}
+
+#nav-menu li {
+    margin: 0 1rem;
+}
+
+#nav-menu a {
+    background: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: 500;
+}
+
+#nav-menu a:hover {
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* === DESKTOP GALLERY === */
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* === CENTER MAIN ON DESKTOP === */
+main.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+}
