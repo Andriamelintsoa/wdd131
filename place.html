@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover Madagascar: its geography, population, capital, and environement." />
+    <meta name="author" content="Maholinirna Sariaka Andriamelintsoa" />
+    <title>Ravinala Madagascar</title>
+    <link rel="stylesheet" href="place.css" />
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Ravinala Madagascar</h1>
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="hero">
+        <picture>
+            <source media="(max-width: 768px)" srcset="images/lemur-small.webp" />
+            <img src="ravinala.webp" alt="Ravinala palm tree in Madagascar landscape" loading="lazy" />
+        </picture>
+    </section>
+
+    <!-- Data Section -->
+    <section class="data">
+        <h2>Data</h2>
+        <ul>
+            <li><strong>Area:</strong> 587,041 sq km</li>
+            <li><strong>Population:</strong> 27,691,018</li>
+            <li><strong>Capital:</strong> Antananarivo</li>
+            <li><strong>Languages:</strong> Malagasy, French</li>
+            <li><strong>Currency:</strong> Malagasy Ariary</li>
+            <li><strong>Time Zone:</strong> UTC+3</li>
+            <li><strong>Calling Code:</strong> +261</li>
+            <li><strong>Internet TLD:</strong> .mg</li>
+        </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+        <h2>Weather</h2>
+        <div class="weather-icon">
+            <!-- Inline SVG: Partly Cloudy -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" aria-label="Partly cloudy weather">
+                <circle cx="24" cy="24" r="18" fill="#FFD700"/>
+                <path d="M16 24a8 8 0 1 1 16 0" fill="#B0C4DE"/>
+                <path d="M20 28a4 4 0 1 1 8 0" fill="#B0C4DE"/>
+                <path d="M24 32a2 2 0 1 1 0 4" fill="#B0C4DE"/>
+            </svg>
+        </div>
+        <div class="weather-details">
+            <p><strong>Temperature:</strong> <span id="temp">28</span> °C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span> °C</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;<span id="year">2024</span> Maholinirna Sariaka Andriamelintsoa 🍃 Madagascar 🍃</p>
+        <p>Last Modification: <span id="lastModified">02/08/2024 22:47:47</span></p>
+    
+        <script src="place.js" defer></script>
+    </footer>
+
+</body>
+</html>

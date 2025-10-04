@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #e0e62b; /* Red */
+    --secondary-color: #007e3a; /* Green */
+    --text-color: #333;
+    --bg-color: #0c0c0c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: rgb(15, 14, 14);
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Data & Weather Sections - Mobile Layout */
+.data, .weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*  Horizontally centers children */
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.data h2, .weather h2 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.weather-icon svg {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 0.5rem;
+    display: block;
+}
+
+/* Wider View Layout */
+@media (min-width: 769px) {
+    .data, .weather {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30%;
+        padding: 1rem;
+    }
+
+    .data {
+        left: 2%;
+    }
+
+    .weather {
+        right: 2%;
+    }
+
+    .weather h2::after {
+        content: "🌤️";
+        margin-left: 0.5rem;
+        font-size: 1.2em;
+    }
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: rgb(15, 14, 14);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
